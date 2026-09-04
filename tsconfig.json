@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",                  // Modern JS features
+    "module": "nodenext",                // Node.js compatibility
+    "moduleResolution": "nodenext",        // Resolve modules like Node.js
+    "ignoreDeprecations": "6.0",
+    "esModuleInterop": true,
+    "strict": true,                      // Enable strict type checking
+    "skipLibCheck": true,                // Faster builds
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "./dist",                  // Compiled output folder
+    "rootDir": "./",                     // Source root
+    "types": ["node", "playwright"]      // Include Node + Playwright types
+  },
+  "include": [
+    "Chapter_25_Typescript/**/*.ts",             // Your TypeScript files
+    "tests/**/*.ts"                      // Playwright test files
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
+
